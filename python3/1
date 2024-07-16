@@ -1,0 +1,33 @@
+#!/usr/bin/python3
+
+class Bird:
+    def __init__(self, name):
+        self.name = name
+
+    def display(self):
+        print("{} too are flying birds".format(self.name))
+
+    def flight(self):
+        print("all bird have wings but {} can fly".format(self.name))
+
+    def wings(self):
+        print("not all {} birds can fly".format(self.name))
+
+class Ostritch(Bird):
+    def __init__(self, name, wingtype, weight):
+        Bird.__init__(self, name)
+        self.wingtype = wingtype
+        self.weight = weight
+        selp.name = name
+    
+    
+    def flight(self):
+        print("have not wings")
+
+ostritchy_obj = Ostritch('dany', 'long', 120)
+ostritchy.flight()
+ostritchy.wings()
+ostritchy.display()
+
+
+        
